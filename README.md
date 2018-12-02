@@ -1,5 +1,45 @@
 # tools-project
 
+## Stock Visualization
+
+### Description
+
+Functions used to visualize different stock features (eg. time series plot, stock return plot, rate of return plot, heatmap plot). By applying different plot functions, input one stock name will output the corresponding plot for that stock.
+ 
+### Application
+
+time series plot
+```
+get_time_series_graph(stock)
+```
+
+stock return plot
+```
+get_stock_return_graph(stock)
+```
+
+rate of return plot
+```
+def get_rate_of_return_graph(stock)
+```
+
+candlestick plot
+```
+get_stock_candlestick_graph(stock)
+```
+
+return for a list of stock in heatmap plot
+```
+get_stock_heatmap()
+```
+
+Functions can be found in file  visualization_function.ipynb
+
+
+
+
+
+
 ## model predictions
 In this section, one could utilized the function to find the best prediction model for each stock tickets that one is interested in. 
 ### initializing
