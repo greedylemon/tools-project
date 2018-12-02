@@ -18,3 +18,7 @@ Finally, apply the function to stock that your are interested in:
 ```
 best_model('AAPL')
 ```
+sample result would be:
+```
+linear_regression model is the best with rms: 36.249188679694555
+```
