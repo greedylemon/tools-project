@@ -14,7 +14,7 @@ import dataset:
 ```
 df = pd.read_csv('stock_price_list',delimiter='\t')
 ```
-Finally, apply the function to stock that your are interested in:
+Finally, apply the function (you could find it in aggregated_prediction_models.ipynb) to stock that your are interested in:
 ```
 best_model('AAPL')
 ```
