@@ -14,11 +14,15 @@ import dataset:
 ```
 df = pd.read_csv('stock_price_list',delimiter='\t')
 ```
-Finally, apply the function (you could find it in aggregated_prediction_models.ipynb) to stock that your are interested in:
+### application
+Apply the function (you could find it in aggregated_prediction_models.ipynb) to stock that your are interested in:
 ```
 best_model('AAPL')
 ```
-sample result would be:
+sample result would be: (rms stands for mean square error)
 ```
 linear_regression model is the best with rms: 36.249188679694555
 ```
+and corresponding predict graph will be shown as the result.
+### model explanation
+The best model selection are choosen from three separated models: k-Nearest Neighbors model, linear regression model and prediction_moving_average. Those three models are shown in detail in correspondind ipynb files. The best model is selescted based on minimum rms (mean square error). 
