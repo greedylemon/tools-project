@@ -1,6 +1,6 @@
 # tools-project
 
-Our project idea coming from investorshub (https://investorshub.advfn.com/boards/hubCats.aspx?grp_id=1). The website provides investors stocks in new technology areas, such as 3D printing. We use data mining skills (beautiful soup) to get stocks from different sectors, and then we collected those stocks' historial close prices in recent years by using yahoo finance API. After data cleaning, we can start to do some following data analysis.
+Our project idea coming from investorshub (https://investorshub.advfn.com/). The website provides investors stocks in new technology areas, such as 3D printing. We use data mining skills (beautiful soup) to get stocks from different sectors, and then we collected those stocks' historial close prices in recent years by using yahoo finance API. After data cleaning, we can start to do some following data analysis.
 
 
 ## Stock Visualization
