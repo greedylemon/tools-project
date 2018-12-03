@@ -1,6 +1,58 @@
 # tools-project
 
 Our project idea coming from investorshub (https://investorshub.advfn.com/). The website provides investors stocks in new technology areas, such as 3D printing. We use data mining skills (beautiful soup) to get stocks from different sectors, and then we collected those stocks' historial close prices in recent years by using yahoo finance API. After data cleaning, we can start to do some following data analysis.
+## Stock Reddit comments mining and analysis
+
+### Description
+In Comments mining, I used beautuful soup(bs4) and requests to first find url for each hot post about stock's topic: 3-D printing, alternative energy, biotechs and finance. Then I used praw(reddit api) and urls to get comments by recursivly analyzing tree strucutre of reddit's comments. 
+
+In analysis, there are four main topics:
+1.sentiment analysis
+2.wordcloud graph
+3.basic commnets'  complexity 
+4.vadar model evaluation for key word,like 'stock'
+
+### Application(text mining part)
+
+```
+import requests
+from bs4 import BeautifulSoup
+```
+
+```
+import praw
+reddit = praw.Reddit(client_id='Ktip90HxAp6NDg',
+                     client_secret='pz6kHCNhMrVfi0n9N3KIOkEXYYY',
+                     user_agent= 'Comment Extraction (by /u/USERNAME)')
+```
+### Application(text analysis part)
+topic1(sentiment analysis):
+```
+get_nrc_data()
+emotion_analyzer(text,emotion_dict=emotion_dict)
+```
+topic2(wordcloud):
+```
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+%matplotlib inline
+```
+topic3(complexity):
+```
+import nltk
+from nltk import sent_tokenize,word_tokenize 
+print('word_size:',int(number_chars/number_word),'\t','sent size:',int(number_word/number_sentence),'\t','complexity:',len(vocabulary)/number_word)
+```
+topic4(vadar model application):
+```
+import nltk
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+get_affect(texts[0],word = 'stock')
+```
+
+
+
+
 
 
 ## Stock Visualization
